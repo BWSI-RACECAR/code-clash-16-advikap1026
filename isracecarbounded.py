@@ -21,6 +21,8 @@ class Solution:
                            
                            answer = True
                            previousChar = instructions[i]
+                           print("prev char: " + previousChar)
+            
             return answer
                       
             pass
