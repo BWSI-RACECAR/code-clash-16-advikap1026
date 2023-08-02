@@ -9,17 +9,19 @@ class Solution:
             
             #TODO: Write code below to returnn a boolean value with the solution to the prompt.
             previousChar = previousChar = instructions[0]
+            answer = False
             print("instructions: " + instructions)
             for i in range(len(instructions)):
                  if i == 0: 
                       continue
                       
                  else:
-                      previousChar = instructions[i]
+                      
                       if (previousChar == instructions[i] and instructions[i] == "L") or (previousChar == instructions[i] and instructions[i] == "R"):
                            
-                           return True 
-            return False 
+                           answer = True
+                           previousChar = instructions[i]
+            return answer
                       
             pass
         
