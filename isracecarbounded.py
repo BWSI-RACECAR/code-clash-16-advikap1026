@@ -8,13 +8,16 @@ class Solution:
             cur_dir=2
             
             #TODO: Write code below to returnn a boolean value with the solution to the prompt.
-            previousChar = ""
+            previousChar = previousChar = instructions[0]
             print("instructions: " + instructions)
             for i in range(len(instructions)):
                  if i == 0: 
-                      previousChar = instructions[i]
+                      continue
+                      
                  else:
+                      previousChar = instructions[i]
                       if (previousChar == instructions[i] and instructions[i] == "L") or (previousChar == instructions[i] and instructions[i] == "R"):
+                           
                            return True 
             return False 
                       
