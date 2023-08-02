@@ -25,7 +25,7 @@ class Solution:
                              else: 
                                   cur_dir = cur_dir -1
                         if i == "R":
-                             if cur_dir ==0: 
+                             if cur_dir ==3: 
                                   cur_dir = 0
                              else: 
                                   cur_dir = cur_dir + 1
