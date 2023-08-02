@@ -9,7 +9,7 @@ class Solution:
             
             #TODO: Write code below to returnn a boolean value with the solution to the prompt.
             previousChar = ""
-            for i in range(instructions):
+            for i in range(len(instructions)):
                  if i == 0: 
                       previousChar = instructions[i]
                  else:
