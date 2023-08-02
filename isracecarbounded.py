@@ -17,7 +17,7 @@ class Solution:
                       
                  else:
                       
-                      if (previousChar == instructions[i] and instructions[i] == "L") or (previousChar == instructions[i] and instructions[i] == "R"):
+                      if ((previousChar == instructions[i] and instructions[i] == "L") or (previousChar == instructions[i] and instructions[i] == "R")):
                            
                            answer = True
                            previousChar = instructions[i]
